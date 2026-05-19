@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body{
+    background: #1E1E1E;
+    font-family: "Jersey 15", sans-serif;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+}
+
+/* Parte principal - Hero*/
+
+.hero{
+    width: 90%;
+    max-width: 1200px;
+
+    padding: 50px;
+
+    background: #D9D9D9;
+
+    border: 8px solid #4B4B63;
+
+    text-align: center;
+}
+
+/* Parte del título */
+
+.hero h1{
+    font-size: 5rem;
+
+    color: white;
+
+    background: #4A124A;
+
+    padding: 20px;
+
+    margin-bottom: 30px;
+
+    letter-spacing: 4px;
+}
+
+/* Subtítulo */
+
+.hero p{
+    font-size: 1.8rem;
+
+    color: #2B2B2B;
+
+    margin-bottom: 50px;
+
+    line-height: 1.5;
+}
+
+/* Card Container*/
+
+.worlds{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    flex-wrap: wrap;
+}
+
+/* Card General */
+
+.card{
+    width: 350px;
+
+    background: #6F677B;
+
+    padding: 40px 20px;
+
+    text-decoration: none;
+
+    border: 6px solid #4B4B63;
+
+    transition: 0.2s steps(2);
+
+    color: white;
+}
+
+/* Card Title*/
+
+.card h2{
+    font-size: 3rem;
+
+    margin-bottom: 20px;
+}
+
+/* Botón de texto */
+
+.card span{
+    font-size: 2rem;
+
+    color: #D9D9D9;
+}
+
+/* =========================
+   HOVER
+========================= */
+
+.card:hover{
+    transform: translateY(-10px);
+
+    background: #4A124A;
+
+    border-color: white;
+
+    box-shadow: 10px 10px 0px #2A0A2A;
+}
+
+/* Diseño Responsivo */
+
+@media(max-width: 768px){
+
+    .hero h1{
+        font-size: 3rem;
+    }
+
+    .hero p{
+        font-size: 1.4rem;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+}

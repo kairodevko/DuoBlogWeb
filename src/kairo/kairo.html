@@ -1,107 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mundo de Kairo</title>
-
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="../kairo/kairo.css">
-
-
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="kairo.css">
 </head>
 <body>
-    <nav id="nav-container">
-        <h1 class="world-title">Mundo de Kairo</h1>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="../../index.html">Regresar</a></li>
-        </ul>
-    </nav>
-    <main>
-        <hr>
-        <!-- INFORMACIÓN ACERCA DE MÍ -->
+    <main id="kairo">
+        <p class="stars">* * *</p>
+        <h1 class="titulo" style="text-transform: none;">MUNDO DE KAIRO</h1>
+        <p class="stars">* * *</p>
 
-        <section class="box-about">
-            <h2 id="about">About Me</h2>
-            <p class="info-p-intro-about"> 
-                Bienvenido a mi mundo, soy Kairo. Soy una desarrolladora de software apasionada por la tecnología y
-                la innovación. Me gusta la creatividad y la resolución de problemas, y siempre estoy buscando nuevas
-                formas de aprender y crecer en mi carrera. 
-            </p>
-            <p class="info-p-extra-about">
-                En mi tiempo libre, me gusta explorar nuevas tecnologías,
-                trabajar en proyectos personales y colaborar con otros desarrolladores para crear soluciones innovadoras. 
-            </p>
-        </section>
+        <p class="intro">Kairo, desarrolladora de software. Me gusta la tecnologia y la innovacion. Creativa y resolutiva.</p>
+<br>
+        <div class="caja-frase">
+            <p>"Codificando un pixel a la vez"</p>
+        </div>
 
-        <!-- HABILIDADES -->
-        <hr>
-        <section class="box-skills">
-            <h2 id="skills">Skills</h2>
-            <p> Lenguajes Web: </p>
-            <ul>
+        <div class="caja-about">
+            <h2 class="sub-titulo">ABOUT ME</h2>
+            <p class="text-about">Me gusta explorar nuevas tecnologias, trabajar en proyectos personales y colaborar con otros desarrolladores para crear soluciones innovadoras.</p>
+        </div>
+
+        <div class="caja-habilidades">
+            <h2 class="sub-titulo">SKILLS</h2>
+            <ul class="lista-skills">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
                 <li>Python</li>
-            </ul>
-
-            <p> Herramientas: </p>
-            <ul>
                 <li>Git</li>
-                <li>Visual Studio Code</li>
+                <li>VS Code</li>
             </ul>
+        </div>
 
-            <p> Habilidades Blandas: </p>
-            <ul>
-                <li>Comunicación efectiva</li>
-                <li>Trabajo en equipo</li>
-                <li>Pensamiento crítico</li>
-                <li>Análisis y resolución de problemas</li>
-            </ul>
+        <div class="caja-proyectos">
+            <h2 class="sub-titulo">PROYECTOS</h2>
+            <div class="proyecto">
+                <p class="proy-titulo">Sistema de Inventario</p>
+                <p class="proy-desc">Gestion de inventario con Python y Excel</p>
+            </div>
+            <div class="proyecto">
+                <p class="proy-titulo">Mini Juego Cafeteria</p>
+                <p class="proy-desc">Juego interactivo con HTML, CSS y JS</p>
+            </div>
+        </div>
 
-        </section>
+        <div class="caja-redes">
+            <h2 class="sub-titulo">REDES</h2>
+            <div class="redes">
+                <a href="https://github.com/kairodevko" target="_blank" class="red-btn">
+                    <span class="icono g">G</span>
+                    <span class="tag">@kairodevko</span>
+                </a>
+                <a href="https://discord.gg/E3bHkvTjV" target="_blank" class="red-btn">
+                    <span class="icono d">D</span>
+                    <span class="tag">Discord</span>
+                </a>
+                <a href="mailto:hikariyoungg@outlook.es" class="red-btn">
+                    <span class="icono e">@</span>
+                    <span class="tag">Email</span>
+                </a>
+            </div>
+        </div>
 
-        <!-- PROYECTOS -->
-         <hr>
-         <section class="box-projects">
-            <h2 id="projects">
-                Projects
-            </h2>
-            <p> He trabajado en varios proyectos personales y colaborativos. Aquí tienes algunos de ellos: </p>
-            <ul>
-                <li>
-                    <strong>Sistema de Inventario de Ferretería:</strong> Desarrollé un sistema de inventario para una ferretería local utilizando Python y Excel. <br>
-                    El sistema permite a los empleados gestionar el inventario, realizar seguimiento de las ventas y generar informes. <br>
-                    Cada reporte se guarda en un archivo de excel con el formato "Reporte_YYYY-MM-DD.xlsx", donde se registran las ventas diarias, el inventario actualizado y las ganancias obtenidas.
-                </li>
-                <li>
-                    <strong>Mini Juego de cafetería:</strong> Desarrollé un pequeño juego interactivo utilizando HTML, CSS y JavaScript. <br>
-                    El juego simula que prepares tu propio café con diferentes ingredientes y opciones de personalización. <br>
-                    El objetivo es crear la bebida perfecta para tus clientes virtuales y ganar puntos por cada pedido exitoso.   
-                </li>
-            </ul>
-         </section>
-         <!-- CONTACTO -->
-         <hr>
-         <section class="box-contact">
-             <h2 id="contact">Contact</h2>
-             <p>Si tienes alguna pregunta o quieres colaborar, no dudes en contactarme:</p>
-             <ul>
-                <li><a href="mailto:hikariyoungg@outlook.es">Email</a></li>
-                <li><a href="https://discord.gg/E3bHkvTjV" target="_blank">Discord Server</a></li>
-                <li><a href="https://github.com/kairodevko" target="_blank">GitHub</a></li>
-             </ul>
-         </section>
+        <br>
+        <a href="../../index.html" class="volver">VOLVER</a>
+        <br>
     </main>
 </body>
 </html>

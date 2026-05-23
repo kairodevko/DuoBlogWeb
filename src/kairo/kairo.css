@@ -4,209 +4,289 @@
     box-sizing: border-box;
 }
 
-/* =========================
-   BODY
-========================= */
-
 body{
     background: #1E1E1E;
-    font-family: "Jersey 15", sans-serif;
+    font-family: "Press Start 2P", cursive !important;
     color: white;
-
-    padding: 40px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-/* =========================
-   MAIN CONTAINER
-========================= */
-
-main{
-    max-width: 1300px;
-    margin: auto;
-
+#kairo{
+    max-width: 700px;
+    width: 100%;
     background: #D9D9D9;
-
-    padding: 40px;
-
     border: 8px solid #4B4B63;
-}
-
-/* =========================
-   NAVBAR
-========================= */
-
-#nav-container{
+    padding: 30px 25px;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    gap: 30px;
-
-    margin-bottom: 40px;
+    gap: 18px;
 }
 
-/* =========================
-   TITLE
-========================= */
+.stars{
+    font-size: 16px;
+    color: #0A3B3B;
+    letter-spacing: 10px;
+    animation: blink 1s steps(2) infinite;
+}
 
-.world-title{
-    background: #4A124A;
+@keyframes blink{
+    0% { opacity: 1; }
+    50% { opacity: 0.2; }
+}
 
+.titulo{
+    font-size: 28px;
+    background: #0A3B3B;
     color: white;
-
-    padding: 20px 60px;
-
-    font-size: 4rem;
-
-    letter-spacing: 3px;
+    padding: 12px 25px;
+    border: 4px solid black;
+    letter-spacing: 2px;
 }
 
-/* =========================
-   NAV LINKS
-========================= */
+.intro{
+    font-size: 10px;
+    color: #333;
+    line-height: 20px;
+    max-width: 480px;
+}
 
-#nav-container ul{
-    display: flex;
-    gap: 30px;
+.caja-frase{
+    background: #0A3B3B;
+    border: 4px solid #4B4B63;
+    padding: 10px 20px;
+    width: 100%;
+}
 
+.caja-frase p{
+    font-size: 10px;
+    color: #D9D9D9;
+}
+
+.caja-about{
+    background: #5A5870;
+    border: 6px solid #4B4B63;
+    padding: 20px;
+    width: 100%;
+}
+
+.text-about{
+    font-size: 10px;
+    color: white;
+    line-height: 20px;
+}
+
+.sub-titulo{
+    font-size: 14px;
+    background: #D9D9D9;
+    color: black;
+    display: inline-block;
+    padding: 8px 18px;
+    margin-bottom: 15px;
+    border: 4px solid #4B4B63;
+}
+
+.caja-habilidades{
+    background: #5A5870;
+    border: 6px solid #4B4B63;
+    padding: 20px;
+    width: 100%;
+}
+
+.lista-skills{
     list-style: none;
-
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 10px;
 }
 
-#nav-container a{
-    text-decoration: none;
-
+.lista-skills li{
     background: #7C6A7C;
-
     color: white;
-
-    padding: 15px 35px;
-
-    font-size: 2rem;
-
+    font-size: 9px;
+    padding: 8px 15px;
+    border: 4px solid #4B4B63;
     transition: 0.2s steps(2);
-
-    border: 4px solid transparent;
 }
 
-#nav-container a:hover{
-    background: #4A124A;
-
+.lista-skills li:hover{
+    background: #0A3B3B;
     border-color: white;
-
-    transform: translateY(-5px);
-
-    box-shadow: 8px 8px 0px #2A0A2A;
+    transform: translateY(-4px);
+    box-shadow: 6px 6px 0px #052020;
 }
 
-/* =========================
-   SECTIONS
-========================= */
-
-section{
+.caja-proyectos{
     background: #5A5870;
-
-    padding: 40px;
-
-    margin-top: 40px;
-
     border: 6px solid #4B4B63;
+    padding: 20px;
+    width: 100%;
 }
 
-/* =========================
-   SECTION TITLES
-========================= */
-
-section h2{
-    background: #D9D9D9;
-
-    color: black;
-
-    display: inline-block;
-
-    padding: 15px 30px;
-
-    font-size: 3rem;
-
-    margin-bottom: 25px;
-}
-
-/* =========================
-   TEXT
-========================= */
-
-section p,
-section li{
-    font-size: 1.7rem;
-
-    line-height: 1.6;
-
-    color: white;
-}
-
-section ul{
-    margin-top: 15px;
-    margin-left: 30px;
-}
-
-/* =========================
-   HR
-========================= */
-
-hr{
-    border: none;
-    height: 6px;
-
-    background: #4B4B63;
-
-    margin: 30px 0;
-}
-
-/* =========================
-   PROJECTS
-========================= */
-
-.box-projects li{
-    margin-bottom: 25px;
-}
-
-/* =========================
-   CONTACT
-========================= */
-
-.box-contact li{
+.proyecto{
+    background: #7C6A7C;
+    border: 4px solid #4B4B63;
+    padding: 12px 15px;
     margin-bottom: 10px;
+    transition: 0.2s steps(2);
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+.proyecto:last-child{
+    margin-bottom: 0;
+}
 
-@media(max-width: 768px){
+.proyecto:hover{
+    background: #0A3B3B;
+    border-color: white;
+    transform: translateY(-4px);
+    box-shadow: 6px 6px 0px #052020;
+}
 
+.proy-titulo{
+    font-size: 10px;
+    color: white;
+    margin-bottom: 6px;
+}
+
+.proy-desc{
+    font-size: 7px;
+    color: #D9D9D9;
+}
+
+.caja-redes{
+    background: #5A5870;
+    border: 6px solid #4B4B63;
+    padding: 20px;
+    width: 100%;
+}
+
+.redes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.red-btn{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    transition: 0.2s steps(2);
+}
+
+.red-btn:hover{
+    transform: translateY(-6px);
+}
+
+.red-btn:hover .icono{
+    border-color: white;
+    box-shadow: 6px 6px 0px #052020;
+}
+
+.icono{
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: white;
+    border: 5px solid #4B4B63;
+    transition: 0.2s steps(2);
+}
+
+.g{
+    background: #24292E;
+}
+
+.d{
+    background: #5865F2;
+}
+
+.e{
+    background: #7C6A7C;
+}
+
+.tag{
+    font-size: 8px;
+    color: white;
+    background: #4B4B63;
+    padding: 5px 8px;
+    border: 3px solid #4B4B63;
+}
+
+.volver{
+    font-family: "Press Start 2P", cursive;
+    font-size: 10px;
+    text-decoration: none;
+    background: #4B4B63;
+    color: white;
+    padding: 12px 22px;
+    border: 6px solid #4B4B63;
+    display: inline-block;
+    transition: 0.2s steps(2);
+}
+
+.volver:hover{
+    background: #0A3B3B;
+    border-color: white;
+    transform: translateY(-6px);
+    box-shadow: 8px 8px 0px #052020;
+}
+
+@media (max-width: 600px){
     body{
-        padding: 20px;
+        padding: 10px;
     }
 
-    .world-title{
-        font-size: 2.5rem;
-        text-align: center;
+    #kairo{
+        padding: 20px 15px;
+        gap: 14px;
     }
 
-    #nav-container a{
-        font-size: 1.5rem;
+    .titulo{
+        font-size: 18px;
+        padding: 10px 15px;
     }
 
-    section h2{
-        font-size: 2rem;
+    .stars{
+        font-size: 12px;
+        letter-spacing: 6px;
     }
 
-    section p,
-    section li{
-        font-size: 1.3rem;
+    .intro{
+        font-size: 8px;
     }
 
+    .sub-titulo{
+        font-size: 11px;
+    }
+
+    .lista-skills li{
+        font-size: 7px;
+        padding: 6px 10px;
+    }
+
+    .icono{
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+
+    .tag{
+        font-size: 6px;
+    }
+
+    .volver{
+        font-size: 8px;
+        padding: 10px 16px;
+    }
 }
-
